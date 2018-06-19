@@ -11,3 +11,26 @@ source activate carnd-term1
 jupyter notebook --ip=0.0.0.0 --no-browser
 
 http://X.X.X.X:8888
+#######################################################################
++----+
+|Init|
++----+
+git config --global user.name "Ahmed Belal"	
+git config --global user.mail "ahmedbelalnour@gmail.com"	
+git remote add origin https://github.com/ahmedbelalnour/CarND-Traffic-Sign-Classifier-Project.git
+wget https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic-signs-data.zip
+
+git status
+git stash
+
++----+
+|Push|
++----+
+git add your_files_separated_by_space
+git commit -m "first commit"
+git push -u origin master
+
++----+
+|Pull|
++----+
+git pull orgin
