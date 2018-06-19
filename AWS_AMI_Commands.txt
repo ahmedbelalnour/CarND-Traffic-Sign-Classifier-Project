@@ -1,0 +1,13 @@
+ssh carnd@X.X.X.X
+
+git clone https://github.com/ahmedbelalnour/CarND-Traffic-Sign-Classifier-Project.git
+
+unzip CarND-Traffic-Sign-Classifier-Project.zip
+
+cd CarND-Traffic-Sign-Classifier-Project
+
+source activate carnd-term1
+
+jupyter notebook --ip=0.0.0.0 --no-browser
+
+http://X.X.X.X:8888
