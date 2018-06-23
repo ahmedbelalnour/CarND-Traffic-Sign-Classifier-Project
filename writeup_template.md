@@ -17,8 +17,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1a]: ./examples/first_visualization.jpg "First Visualization"
-[image1b]: ./examples/second_visualization.jpg "Second Visualization"
+[image1a]: ./examples/first_visualization.png "First Visualization"
+[image1b]: ./examples/second_visualization.png "Second Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3a]: ./examples/Rotated_image.png "Rotated Images"
 [image3b]: ./examples/Shifted_image.png "Shifted Images"
