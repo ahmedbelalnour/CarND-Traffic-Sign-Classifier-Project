@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1a]: ./examples/first_visualization.png "First Visualization"
-[image1b]: ./examples/second_visualization.png "Second Visualization"
+[image1b]: ./examples/second_visualization.PNG "Second Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3a]: ./examples/Rotated_image.png "Rotated Images"
 [image3b]: ./examples/Shifted_image.png "Shifted Images"
@@ -121,9 +121,9 @@ To train the model, I used an the following hyperparameters:
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 96.0 %
-* validation set accuracy of 94.2 %
-* test set accuracy of 80 %
+* training set accuracy of 96.2 %
+* validation set accuracy of 94.5 %
+* test set accuracy of 73.3 %
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -146,37 +146,76 @@ Here are 15 German traffic signs that I found on the web:
 
 ![alt text][image4]
 
-The first image might be difficult to classify because it has the lowest number of training data
-
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
 | Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Keep right			| Keep right									|
+| No entry      		| No entry   									| 
+| Double curve     		| Double curve 									|
+| Children crossing		| Children crossing				 				|
+| Turn left ahead		| Turn left ahead      							|
+| Keep left				| Keep left										|
+| Roundabout mandatory	| Priority road									|
+| Right-of-way at the next intersection	| Right-of-way at the next intersection	| 
+| Speed limit (20km/h)	| Speed limit (120km/h)							|
+| Speed limit (30km/h)	| Ahead only				 					|
+| Speed limit (30km/h)	| Speed limit (30km/h)							|
+| Speed limit (70km/h)	| Stop											|
+| stop					| Stop						 					|
+| No entry				| No entry										|
 
 
-The model was able to correctly guess 12 of the 15 traffic signs, which gives an accuracy of 80%.
+The model was able to correctly guess 11 of the 15 traffic signs, which gives an accuracy of 73.3 %.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a Yield sign (probability of 1.0), and the image does contain a Yield sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 1.0         			| Yield   										| 
+| 0.0     				| Keep left 									|
+| 0.0					| Speed limit (20km/h)							|
+| 0.0	      			| Speed limit (30km/h)			 				|
+| 0.0				    | Speed limit (50km/h) 							|
 
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| Keep Right									| 
+| 0.0					| Speed limit (20km/h)							|
+| 0.0	      			| Speed limit (30km/h)			 				|
+| 0.0				    | Speed limit (50km/h) 							|
+| 0.0				    | Speed limit (60km/h) 							|
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.98         			| Stop 		   									| 
+| 0.0     				| Traffic signals								|
+| 0.0					| Speed limit (20km/h)							|
+| 0.0	      			| Bicycles crossing					 			|
+| 0.0				    | General caution      							|
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.99         			| No entry   									| 
+| 0.0     				| Turn left ahead 								|
+| 0.0					| Stop  										|
+| 0.0	      			| Turn right ahead					 			|
+| 0.0				    | No passing for vehicles over 3.5 metric tons	|
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.99         			| Double curve   								| 
+| 0.0     				| Ahead only 									|
+| 0.0					| Beware of ice/snow							|
+| 0.0	      			| Speed limit (60km/h)			 				|
+| 0.0				    | Speed limit (50km/h) 							|
 
 For the second image ... 
 
