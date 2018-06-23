@@ -17,12 +17,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1a]: ./examples/visualization.jpg "First Visualization"
-[image1b]: ./examples/visualization.jpg "Second Visualization"
+[image1a]: ./examples/first_visualization.jpg "First Visualization"
+[image1b]: ./examples/second_visualization.jpg "Second Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3a]: ./examples/Rotated_image.jpg "Rotated Images"
-[image3b]: ./examples/Shifted_image.jpg "Shifted Images"
-[image4]: ./examples/placeholder.png "15 German Traffic Sign"
+[image3a]: ./examples/Rotated_image.png "Rotated Images"
+[image3b]: ./examples/Shifted_image.png "Shifted Images"
+[image4]: ./examples/German_Traffic_Sign.png "15 German Traffic Sign"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
