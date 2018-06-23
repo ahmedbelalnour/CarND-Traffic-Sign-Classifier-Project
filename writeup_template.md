@@ -202,6 +202,7 @@ For the first image, the model is relatively sure that this is a Yield sign (pro
 | 0.0				    | Speed limit (50km/h) 							|
 
 For the second image, the model is relatively sure that this is a Keep Right sign (probability of 1.0). The top five soft max probabilities were
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0         			| Keep Right									| 
@@ -211,6 +212,7 @@ For the second image, the model is relatively sure that this is a Keep Right sig
 | 0.0				    | Speed limit (60km/h) 							|
 
 For the third image, the model is relatively sure that this is a Stop sign (probability of 0.98). The top five soft max probabilities were
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 0.98         			| Stop 		   									| 
@@ -220,6 +222,7 @@ For the third image, the model is relatively sure that this is a Stop sign (prob
 | 0.0				    | General caution      							|
 
 For the forth image, the model is relatively sure that this is a No entry sign (probability of 0.99). The top five soft max probabilities were
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 0.99         			| No entry   									| 
@@ -229,6 +232,7 @@ For the forth image, the model is relatively sure that this is a No entry sign (
 | 0.0				    | No passing for vehicles over 3.5 metric tons	|
 
 For the fifth image, the model is relatively sure that this is a Double curve sign (probability of 0.99). The top five soft max probabilities were
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 0.99         			| Double curve   								| 
@@ -236,5 +240,3 @@ For the fifth image, the model is relatively sure that this is a Double curve si
 | 0.0					| Beware of ice/snow							|
 | 0.0	      			| Speed limit (60km/h)			 				|
 | 0.0				    | Speed limit (50km/h) 							|
-
-
